@@ -3,17 +3,17 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/Xiaomi/cancro/full_cancro.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cancro
-PRODUCT_NAME := cm_cancro
+PRODUCT_NAME := aicp_cancro
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := Xiaomi
